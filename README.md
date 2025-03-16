@@ -12,12 +12,14 @@ AnCloud-Server 是一个基于 Go 语言开发的 AnCloud 的服务器项目，�
 ### 安装
 
 1. 克隆项目
+
 ```bash
 git clone https://github.com/simpleyyt/AnCloud-Server.git
 cd AnCloud-Server
 ```
 
-2. 安装依赖
+1. 安装依赖
+
 ```bash
 go mod download
 ```
@@ -25,6 +27,7 @@ go mod download
 ### 编译
 
 1. 本地编译
+
 ```bash
 # Linux/macOS
 go build -o ancloud-server
@@ -33,7 +36,8 @@ go build -o ancloud-server
 go build -o ancloud-server.exe
 ```
 
-2. 交叉编译
+1. 交叉编译
+
 ```bash
 # 编译 Linux 版本
 GOOS=linux GOARCH=amd64 go build -o ancloud-server-linux-amd64
@@ -48,6 +52,7 @@ GOOS=darwin GOARCH=amd64 go build -o ancloud-server-darwin-amd64
 ### 运行
 
 1. 直接运行
+
 ```bash
 # 运行源码
 go run main.go
@@ -57,7 +62,8 @@ go run main.go
 .\ancloud-server.exe  # Windows
 ```
 
-2. 使用 Docker 运行
+1. 使用 Docker 运行
+
 ```bash
 docker build -t ancloud-server .
 docker run -p 8080:8080 ancloud-server
