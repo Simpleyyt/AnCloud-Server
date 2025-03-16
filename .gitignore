@@ -1,0 +1,64 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+
+# Go specific
+/bin/
+/pkg/
+/vendor/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.cover
+*.coverprofile
+coverage.txt
+
+# Dependency directories
+/Godeps/
+/_vendor*/
+
+# Log files
+*.log
+logs/
+
+# Config files that might contain sensitive information
+.env
+config.local.yaml
+*.pem
+*.key
+*.yaml
+
+# IDE specific files
+.cursor/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*~
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.a
+
+# Application binary
+/AnCloud-Server
+
+# Debug files
+debug
+__debug_bin
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# System Files
+.DS_Store
+Thumbs.db 
