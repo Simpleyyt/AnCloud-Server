@@ -14,19 +14,19 @@ var (
 )
 
 const (
-	DEFAULT_HOST        = "localhost"
+	DEFAULT_HOST        = "0.0.0.0"
 	DEFAULT_PORT        = 8080
 	DEFAULT_CONFIG_PATH = "config/config.yaml"
 	DEFAULT_STUN_SERVER = "stun:stun.l.google.com:19302"
 )
 
 type Http struct {
-	Host string `yaml:"host" default:"localhost"`
-	Port int    `yaml:"port" default:"8080"`
+	Host string `yaml:"host"`
+	Port int    `yaml:"port"`
 }
 
 type WebRTC struct {
-	StunServer string `yaml:"stun_server" default:"stun:stun.l.google.com:19302"`
+	StunServer string `yaml:"stun_server"`
 }
 
 type Config struct {

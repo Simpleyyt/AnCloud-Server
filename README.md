@@ -1,6 +1,6 @@
 # AnCloud-Server
 
-AnCloud-Server 是一个基于 Go 语言开发的 AnCloud 的服务器项目，使用 Gin 框架构建 WebRTC 信任服务。
+AnCloud-Server 是一个基于 Go 语言开发的 AnCloud 的服务端项目，使用 Gin 框架构建 WebRTC 信令服务。
 
 ## 快速开始
 
@@ -11,14 +11,14 @@ AnCloud-Server 是一个基于 Go 语言开发的 AnCloud 的服务器项目，�
 
 ### 安装
 
-1. 克隆项目
+#### 克隆项目
 
 ```bash
 git clone https://github.com/simpleyyt/AnCloud-Server.git
 cd AnCloud-Server
 ```
 
-1. 安装依赖
+#### 安装依赖
 
 ```bash
 go mod download
@@ -26,7 +26,7 @@ go mod download
 
 ### 编译
 
-1. 本地编译
+#### 本地编译
 
 ```bash
 # Linux/macOS
@@ -36,7 +36,7 @@ go build -o ancloud-server
 go build -o ancloud-server.exe
 ```
 
-1. 交叉编译
+#### 交叉编译
 
 ```bash
 # 编译 Linux 版本
@@ -51,7 +51,7 @@ GOOS=darwin GOARCH=amd64 go build -o ancloud-server-darwin-amd64
 
 ### 运行
 
-1. 直接运行
+#### 直接运行
 
 ```bash
 # 运行源码
@@ -62,7 +62,7 @@ go run main.go
 .\ancloud-server.exe  # Windows
 ```
 
-1. 使用 Docker 运行
+#### 使用 Docker 运行
 
 ```bash
 docker build -t ancloud-server .
